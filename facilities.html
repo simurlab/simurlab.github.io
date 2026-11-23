@@ -3,19 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Facilities – SiMuR</title>
-<meta name="description" content="MovLab optical motion capture laboratory, robotic test bench, wearable inertial nodes and open software of the SiMuR group.">
+<title>MovLab and facilities – SiMuR</title>
+<meta name="description" content="MovLab, the motion capture laboratory of the SiMuR group: passive-marker optical system and wireless inertial system on one capture volume, plus a robotic test bench and in-house wearable sensor nodes.">
+<link rel="icon" href="assets/img/old/home-01.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
-<header class="site"><div class="wrap">
-<a class="brand" href="index.html">SiMuR<span>Multisensor Systems and Robotics · University of Oviedo</span></a>
-<nav aria-label="Main"><ul>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="index.html"><img src="assets/img/old/home-04.png" alt="SiMuR Movement Technology" width="800" height="387"><span>Multisensor Systems and Robotics, University of Oviedo</span></a>
+<nav class="site-nav" aria-label="Main"><ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="research.html">Research</a></li>
 <li><a href="applications.html">Applications</a></li>
-<li><a href="facilities.html" aria-current="page">Facilities</a></li>
+<li><a href="facilities.html" aria-current="page">MovLab</a></li>
 <li><a href="publications.html">Publications</a></li>
 <li><a href="team.html">Team</a></li>
 </ul></nav>
@@ -23,53 +26,64 @@
 
 <main id="main">
 <section class="page-head"><div class="wrap">
-<p class="eyebrow">Facilities</p>
-<h1>References of known quality</h1>
-<p class="lead">A wearable measurement is only as credible as the reference it was checked against. The group maintains its own references and has measured how good they are.</p>
+<h1>MovLab, the motion capture laboratory</h1>
+<p class="lead">A passive-marker optical system and a wireless inertial system that work independently or synchronised over the same capture volume. It is the reference against which we check what the wearable sensors say.</p>
 </div></section>
 
-<section id="movlab"><div class="wrap">
-<h2>MovLab: optical motion capture</h2>
-<p>MovLab is the group's motion capture laboratory. It is used as the experimental reference when validating wearable methods in people, synchronised with the inertial sensor network.</p>
+<section class="sec white" id="movlab"><div class="wrap">
+<img src="assets/img/old/movlab-05.jpg" alt="The MovLab laboratory: optical cameras on tripods around the capture volume" width="1280" height="720">
+<div class="stats">
+<div><b>0.419 mm</b><span>3D reprojection error</span></div>
+<div><b>0.104 mm</b><span>Wand error (scale)</span></div>
+<div><b>1.6 × 3.2 m</b><span>Effective capture volume</span></div>
+<div><b>9 + 20</b><span>Optical cameras and inertial sensors</span></div>
+</div>
+<div class="split" style="margin-top:2rem">
+<div><h2>Hybrid optical and inertial capture</h2></div>
+<div>
+<p>The optical system uses nine OptiTrack Flex 3 cameras around the capture volume. The inertial system records wirelessly on the same time base, so every wearable estimate can be compared sample by sample with the optical reference.</p>
+<p>The laboratory has itself been evaluated: we measured the performance of the optical system with an industrial robot, following a procedure inspired by ASTM E3064.</p>
 <dl class="facts">
-<dt>System</dt><dd>OptiTrack, ten Flex 3 cameras at 100 Hz</dd>
-<dt>Evaluated against</dt><dd>An industrial robot, with a procedure inspired by ASTM E3064</dd>
 <dt>Published in</dt><dd><a href="https://doi.org/10.1109/MFI49285.2020.9235242">IEEE MFI 2020</a>; <a href="https://doi.org/10.3390/s21113748">Sensors 2021</a></dd>
 </dl>
+</div>
+</div>
 </div></section>
 
-<section id="robot"><div class="wrap">
-<h2>Robotic test bench</h2>
+<section class="sec" id="robot"><div class="wrap split">
+<div><div class="rule"></div><h2>Robotic test bench</h2></div>
+<div>
 <p>A six-axis manipulator moves the sensors along trajectories whose orientation is known from the robot's encoders. It gives a reference free of soft tissue, repeatable and available under static and dynamic conditions.</p>
 <dl class="facts">
 <dt>Robot</dt><dd>Universal Robots UR3e, six axes</dd>
-<dt>Used as reference for</dt><dd>Inertial orientation estimation and optical motion capture</dd>
+<dt>Reference for</dt><dd>Inertial orientation estimation and optical motion capture</dd>
 <dt>Published in</dt><dd><a href="https://doi.org/10.1109/TIM.2026.3670515">IEEE Trans. Instrumentation and Measurement 2026</a>; <a href="https://doi.org/10.1109/I2MTC62753.2025.11079213">IEEE I2MTC 2025</a></dd>
 </dl>
+</div>
 </div></section>
 
-<section id="nodes"><div class="wrap">
-<h2>Wearable inertial nodes</h2>
+<section class="sec white" id="nodes"><div class="wrap split">
+<div><h2>Wearable inertial nodes</h2></div>
+<div>
 <p>The group designs its own wearable inertial measurement units and characterises them metrologically: noise, bias stability, scale factor and axis misalignment. A second design extends the bandwidth to capture rapid events such as impacts.</p>
 <dl class="facts">
 <dt>Published in</dt><dd><a href="https://doi.org/10.3390/s24165388">Sensors 2024</a>; <a href="https://doi.org/10.3390/s25196224">Sensors 2025</a>; <a href="https://doi.org/10.1109/I2MTC62753.2025.11079060">IEEE I2MTC 2025</a></dd>
 </dl>
+</div>
 </div></section>
 
-<section id="software"><div class="wrap">
-<h2>Open software</h2>
+<section class="sec" id="software"><div class="wrap split">
+<div><h2>Open software</h2></div>
+<div>
 <p><a href="https://github.com/simurlab/SimurToolsTB">SimurToolsTB</a> is the group's MATLAB toolbox for IMU-based human motion analysis, released under the MIT licence on GitHub.</p>
-</div></section>
-
-<section><div class="wrap">
-<h2>Visit</h2>
-<p>Ed. Departamental Oeste nº 2, Lab 2.1.15, Campus Universitario, 33204 Gijón, Asturias, Spain. Contact: <a href="mailto:juan@uniovi.es">juan@uniovi.es</a>.</p>
+<p>To visit the laboratory or ask about validation services, write to <a href="mailto:juan@uniovi.es">juan@uniovi.es</a>. We are at Ed. Departamental Oeste nº 2, Lab 2.1.15, Campus Universitario, Gijón.</p>
+</div>
 </div></section>
 </main>
 
-<footer class="site"><div class="wrap">
-<div><p><strong>SiMuR – Multisensor Systems and Robotics</strong></p><p>Department of Electrical, Electronic, Computer and Systems Engineering (DIEECS)</p><p>University of Oviedo</p></div>
-<div><p><strong>Contact</strong></p><p><a href="mailto:juan@uniovi.es">juan@uniovi.es</a></p><p>(+34) 985 182529</p></div>
+<footer class="site-foot"><div class="wrap">
+<div><p><strong>SiMuR, Multisensor Systems and Robotics</strong></p><p>Department of Electrical, Electronic, Computer and Systems Engineering</p><p>University of Oviedo</p></div>
+<div><p><strong>Contact</strong></p><p><a href="mailto:juan@uniovi.es">juan@uniovi.es</a></p><p>(+34) 985 182529</p><p><a href="https://github.com/simurlab">github.com/simurlab</a></p></div>
 <div><p><strong>Address</strong></p><p>Ed. Departamental Oeste nº 2, Lab 2.1.15</p><p>Campus Universitario, 33204 Gijón, Asturias, Spain</p></div>
 </div></footer>
 </body>

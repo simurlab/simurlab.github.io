@@ -4,18 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Research – SiMuR</title>
-<meta name="description" content="The SiMuR research programme: wearable measurement of joint kinematics and gait in everyday conditions, by non-expert users, with known and verifiable uncertainty.">
+<meta name="description" content="Research topics of the SiMuR group: trustworthy estimation, wearable inertial measurement units, joint kinematics and gait, activity recognition, learning-based motion reconstruction and ambulatory navigation.">
+<link rel="icon" href="assets/img/old/home-01.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
-<header class="site"><div class="wrap">
-<a class="brand" href="index.html">SiMuR<span>Multisensor Systems and Robotics · University of Oviedo</span></a>
-<nav aria-label="Main"><ul>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="index.html"><img src="assets/img/old/home-04.png" alt="SiMuR Movement Technology" width="800" height="387"><span>Multisensor Systems and Robotics, University of Oviedo</span></a>
+<nav class="site-nav" aria-label="Main"><ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="research.html" aria-current="page">Research</a></li>
 <li><a href="applications.html">Applications</a></li>
-<li><a href="facilities.html">Facilities</a></li>
+<li><a href="facilities.html">MovLab</a></li>
 <li><a href="publications.html">Publications</a></li>
 <li><a href="team.html">Team</a></li>
 </ul></nav>
@@ -23,47 +26,73 @@
 
 <main id="main">
 <section class="page-head"><div class="wrap">
-<p class="eyebrow">Research programme</p>
-<h1>Measuring human movement outside the camera-monitored space</h1>
-<p class="lead">Optical motion capture, with or without markers, needs cameras with a clear line of sight over a fixed volume. Inertial sensors can leave that volume, but today they do so with restrictions: expert placement, supervised calibration, short sessions and methods validated for one task and one population. Our programme studies how to remove those restrictions without losing the right to call the result a measurement.</p>
+<h1>Research topics</h1>
+<p class="lead">Methods and measurement capabilities at the core of the group: how we turn wearable and optical sensing into reliable human-motion variables. These lines sustain our scientific output and the technology transfer, a toolbox and validation services, that grows out of them.</p>
 </div></section>
 
-<section><div class="wrap">
-<h2>The problems we address</h2>
-<p>Measuring a joint angle with body-worn sensors requires placing a network of sensors on a moving body, knowing at all times how each sensor is oriented relative to the joint, and delivering a value with its metrological properties. Each requirement is a research problem.</p>
-<div class="grid">
-<div class="card" id="sensor"><span class="num">Problem 1</span><h3>Sensor, placement and conditions of use</h3><p>Which errors of the sensor node are admissible, how far a sensor may be from its nominal position, and which conditions of use the system must recognise: magnetic disturbance, bias variation, sensor displacement, high acceleration.</p></div>
-<div class="card" id="calibration"><span class="num">Problem 2</span><h3>Calibration from the person's own movement</h3><p>Estimating the orientation of each sensor relative to its body segment, and of the sensors relative to each other, without manoeuvres directed by an expert, and keeping that estimate valid as conditions change during a session.</p></div>
-<div class="card" id="uncertainty"><span class="num">Problem 3</span><h3>The value and its uncertainty</h3><p>Estimating the joint angle or gait variable together with an interval that depends on the conditions in which it was obtained, from the characterisation of the sensor to the movement of soft tissue.</p></div>
+<section class="sec white"><div class="wrap split">
+<div><div class="rule"></div><h2>The problem behind every topic</h2></div>
+<div>
+<p>Measuring a joint angle with body-worn sensors requires placing a network of sensors on a moving body, knowing at all times how each sensor is oriented relative to the joint, and delivering a value with its metrological properties. Each requirement is a research problem: which sensor errors and placements are admissible, how to calibrate from the person's own movement, and how to give each value an uncertainty that follows the conditions of use.</p>
+<div class="note"><p>A wearable measurement is not valid in every condition. Part of the result is to state the domain in which it holds, and to make the system recognise from its own signals when it is outside that domain.</p></div>
 </div>
 </div></section>
 
-<section id="verification"><div class="wrap">
-<h2>Verification without a perfect reference</h2>
-<p>In people there is no exact reference: optical motion capture with skin markers is affected by soft tissue too. We therefore verify in levels, each with its own declared uncertainty and each isolating part of the error.</p>
-<div class="grid">
-<div class="card"><h3>Robotic test bench</h3><p>An industrial manipulator moves the sensors along known trajectories. It isolates the errors of the sensor and of the algorithm, with no soft tissue involved.</p></div>
-<div class="card"><h3>Optical motion capture</h3><p>Our laboratory, MovLab, provides the reference in people. Its own uncertainty has been evaluated against the robot.</p></div>
-<div class="card"><h3>Field checks</h3><p>Outside the laboratory, partial references show whether the declared uncertainty is consistent with what is observed. They do not replace a laboratory reference.</p></div>
+<section class="sec"><div class="wrap">
+<h2>Core capabilities</h2>
+<div class="tiles">
+
+<article class="tile" id="trustworthy"><img src="assets/img/old/research-topis-04.jpg" alt="" width="1280" height="375"><div class="body">
+<h3>Trustworthy estimation</h3>
+<p>Making wearable motion estimates trustworthy: validation against an optical reference, calibrated per-joint uncertainty and robustness in everyday use. Each kinematic estimate becomes a signal that is verified, carries its own confidence and detects its own failures.</p>
+<ul><li>Metrological validation of wearable estimates against optical motion capture as reference.</li><li>Calibrated, per-joint uncertainty quantification (conformal and Bayesian methods).</li><li>Detection of sensor displacement and misplacement, and drift handling, for long-term use.</li><li>Out-of-distribution detection and reliability flags that make estimates auditable for clinical and sports decisions.</li><li>Reproducible validation protocols; validation datasets released openly as a by-product of specific studies.</li></ul>
+</div></article>
+
+<article class="tile" id="imu"><img src="assets/img/old/research-topis-05.jpg" alt="" width="1280" height="375"><div class="body">
+<h3>Wearable inertial measurement units</h3>
+<p>Design, characterisation and real-time operation of wearable inertial measurement units and sensor networks for human-motion analysis.</p>
+<ul><li>Design and characterisation of wearable IMUs and body sensor networks.</li><li>High-frequency inertial capture of high-dynamic events (impacts, sport gestures).</li><li>Magnetometer-less orientation estimation and its limits.</li><li>Sensor calibration and metrological characterisation procedures.</li><li>Time synchronisation and multi-sensor data acquisition.</li></ul>
+</div></article>
+
+<article class="tile" id="joints"><img src="assets/img/old/research-topis-06.jpg" alt="" width="1280" height="375"><div class="body">
+<h3>Joint kinematics and gait variables</h3>
+<p>Estimation of segment and joint kinematics and of discrete gait descriptors from multiple wearable inertial sensors.</p>
+<ul><li>Joint angle estimation from single- and multi-sensor configurations.</li><li>Sensor-to-segment calibration and alignment.</li><li>Gait event detection and ground contact time.</li><li>Spatio-temporal gait parameter estimation.</li><li>Spine and trunk multi-segment kinematics.</li></ul>
+</div></article>
+
+<article class="tile" id="har"><img src="assets/img/old/research-topis-07.jpg" alt="" width="1280" height="375"><div class="body">
+<h3>Human activity recognition</h3>
+<p>Recognising and characterising human activity from wearable inertial signals with machine learning, including deep and self-supervised models.</p>
+<ul><li>Activity classification and temporal segmentation from wearable IMU signals.</li><li>Activity recognition from thigh, wrist and upper-body accelerometry.</li><li>Self-supervised and transfer learning to reduce labelling needs.</li><li>Context inference in IMU sensing.</li><li>Robustness to sensor placement, subject and protocol variability.</li></ul>
+</div></article>
+
+<article class="tile" id="reconstruction"><img src="assets/img/old/research-topis-08.jpg" alt="" width="1280" height="375"><div class="body">
+<h3>Learning-based motion reconstruction</h3>
+<p>Reconstruction of full-body joint kinematics from few, everyday sensors by combining sensor fusion with physics-informed learning.</p>
+<ul><li>Sparse-to-dense kinematics: full-body motion from a reduced set of wearable sensors.</li><li>Physics-informed, differentiable-biomechanics priors that enforce anatomically plausible motion.</li><li>Estimation without supervised calibration and tolerant to sensor placement, for everyday use.</li><li>Magnetometer-free operation through kinematic constraints (joint axes and centres).</li><li>Joint-angle accuracy assessed against an optical reference.</li></ul>
+</div></article>
+
+<article class="tile" id="navigation"><img src="assets/img/old/research-topis-09.jpg" alt="" width="1280" height="375"><div class="body">
+<h3>Ambulatory human navigation</h3>
+<p>Estimating human locomotion in GPS-denied environments from body-worn inertial sensors, without external positioning infrastructure: pedestrian dead reckoning, direction-change intention and trajectory reconstruction.</p>
+<ul><li>Pedestrian dead reckoning and waist-worn inertial navigation.</li><li>Accelerometry-based distance, speed and slope estimation.</li><li>Step segmentation and stride-length modelling.</li><li>Real-time short-term pedestrian trajectory prediction.</li><li>Intention and turn anticipation from body kinematics.</li></ul>
+</div></article>
+
 </div>
-<p style="margin-top:1.25rem">Details of the equipment are in <a href="facilities.html">Facilities</a>.</p>
 </div></section>
 
-<section><div class="wrap">
-<h2>Methods</h2>
-<p>We combine sensor characterisation, signal processing, biomechanical models of the joints and of gait, and experimental validation. Machine learning is one of our tools: we use it to estimate kinematic variables from raw inertial data and to recognise activities from wearable accelerometry, and we study how such models behave across people, conditions and devices.</p>
-<p>Lines with published results include segment orientation without a magnetometer, joint angle estimation, gait events and ground contact time, walking speed and distance, pedestrian navigation and activity recognition. The full list is in <a href="publications.html">Publications</a>.</p>
-</div></section>
-
-<section><div class="wrap">
-<h2>What we do not claim</h2>
-<div class="note"><p>A wearable measurement is not valid in every condition. Part of the result is to state the domain in which it holds, and to make the system recognise from its own signals when it is outside that domain. Everyday conditions here describe how the data are acquired; they do not mean continuous round-the-clock monitoring at home.</p></div>
+<section class="sec white"><div class="wrap split">
+<div><h2>Verification without a perfect reference</h2></div>
+<div>
+<p>In people there is no exact reference: optical motion capture with skin markers is affected by soft tissue too. We verify in levels, each with its own declared uncertainty. A robotic test bench isolates the errors of the sensor and the algorithm; the optical laboratory provides the reference in people; and field checks show whether the declared uncertainty is consistent with what is observed outside the laboratory.</p>
+<p><a href="facilities.html">MovLab and the robotic test bench</a> · <a href="applications.html">Application domains</a></p>
+</div>
 </div></section>
 </main>
 
-<footer class="site"><div class="wrap">
-<div><p><strong>SiMuR – Multisensor Systems and Robotics</strong></p><p>Department of Electrical, Electronic, Computer and Systems Engineering (DIEECS)</p><p>University of Oviedo</p></div>
-<div><p><strong>Contact</strong></p><p><a href="mailto:juan@uniovi.es">juan@uniovi.es</a></p><p>(+34) 985 182529</p></div>
+<footer class="site-foot"><div class="wrap">
+<div><p><strong>SiMuR, Multisensor Systems and Robotics</strong></p><p>Department of Electrical, Electronic, Computer and Systems Engineering</p><p>University of Oviedo</p></div>
+<div><p><strong>Contact</strong></p><p><a href="mailto:juan@uniovi.es">juan@uniovi.es</a></p><p>(+34) 985 182529</p><p><a href="https://github.com/simurlab">github.com/simurlab</a></p></div>
 <div><p><strong>Address</strong></p><p>Ed. Departamental Oeste nº 2, Lab 2.1.15</p><p>Campus Universitario, 33204 Gijón, Asturias, Spain</p></div>
 </div></footer>
 </body>
