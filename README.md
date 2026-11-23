@@ -9,7 +9,8 @@ Plain static HTML and CSS, no build step and no dependencies:
 - `applications.html` – application areas and projects
 - `facilities.html` – MovLab, robotic test bench, sensor nodes, software
 - `publications.html` – publications by topic
+- `collaborate.html` – what the group does for partners and how
 - `team.html` – people and contact
 - `assets/style.css` – the only stylesheet
 
-To edit: change the HTML file and commit to `main`; the site is republished in a minute or two. The header and footer are repeated in every page, so a change to the menu must be copied to all six files.
+To edit: change the HTML file and commit to `main`; the site is republished in a minute or two. The header and footer are repeated in every page, so a change to the menu must be copied to all seven files.
