@@ -49,6 +49,7 @@ p{margin:0 0 1rem;max-width:42rem}
 .plot .ref{fill:var(--deep);stroke:#fff;stroke-width:2}
 .plot .tick{stroke:#5e8f94;stroke-width:1}
 .plot text{font:500 15px var(--body);fill:#cfe6e3}
+.plot text:first-of-type{text-anchor:end;transform:translate(-32px,0)}
 .plot .flag{fill:var(--signal)}
 .plot .flagline{stroke:var(--signal);stroke-width:2;stroke-dasharray:4 5}
 @keyframes draw{to{stroke-dashoffset:0}}
@@ -78,6 +79,9 @@ p{margin:0 0 1rem;max-width:42rem}
 .cond h3{font-size:1.3rem;padding-top:.9rem;border-top:4px solid var(--teal)}
 .cond p{color:var(--muted);margin:0}
 .note{border-left:4px solid var(--signal);padding:.2rem 0 .2rem 1.25rem;max-width:42rem}
+.sec ul:not([class]){margin:0;padding-left:1.1rem;color:var(--muted);max-width:42rem}
+.sec ul:not([class]) li{margin-bottom:.3rem}
+.sec ul:not([class]) li::marker{color:var(--teal)}
 
 /* topic tiles */
 .tiles{display:grid;gap:2rem;grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -85,9 +89,7 @@ p{margin:0 0 1rem;max-width:42rem}
 .tile img{width:100%}
 .tile .body{padding:1.25rem 1.4rem 1.4rem}
 .tile .body>p{margin-bottom:.75rem}
-.tile ul{margin:0;padding-left:1.1rem;color:var(--muted);font-size:.96rem}
-.tile li{margin-bottom:.3rem}
-.tile li::marker{color:var(--teal)}
+.tile ul{font-size:.96rem}
 .area{display:grid;gap:1.25rem 2.5rem;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center}
 .area img{width:100%}
 
@@ -122,11 +124,12 @@ dl.facts dd{margin:0}
 .pubs .v{font-size:.93rem}
 
 /* people */
-.people{display:grid;gap:1.75rem;grid-template-columns:repeat(3,minmax(0,1fr))}
-.people.small-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.people{display:grid;gap:1.75rem;grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr));align-items:start}
+.people.small-grid{grid-template-columns:repeat(auto-fill,minmax(13rem,1fr))}
 .person{margin:0;background:var(--paper);border:1px solid var(--line)}
-.person img{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:50% 30%}
+.person img{width:100%;height:auto}
 .person figcaption{padding:.8rem 1rem 1rem}
+.person figcaption:empty{display:none}
 .person b{font:700 1.02rem/1.25 var(--display);font-stretch:108%;display:block}
 .person span{font-size:.9rem;color:var(--muted)}
 
@@ -137,5 +140,5 @@ dl.facts dd{margin:0}
 .site-foot p{margin:0 0 .3rem}
 .site-foot a{color:#fff}
 
-@media (max-width:56rem){.hero-text,.split,.split.even,.area{grid-template-columns:1fr}.cols3{grid-template-columns:1fr}.tiles{grid-template-columns:1fr}.people,.people.small-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stats div:nth-child(3){border-left:0}.stats div:nth-child(n+3){border-top:1px solid var(--line)}.site-foot .wrap{grid-template-columns:1fr}.site-head{position:static}.plot text{font-size:22px}}
-@media (max-width:34rem){body{font-size:16px}.sec{padding:2.75rem 0}.hero .wrap{padding-top:3rem}.brand span{display:none}dl.facts{grid-template-columns:1fr;gap:.1rem}dl.facts dd{margin-bottom:.7rem}.people,.people.small-grid{grid-template-columns:1fr}}
+@media (max-width:56rem){.hero-text,.split,.split.even,.area{grid-template-columns:1fr}.cols3{grid-template-columns:1fr}.tiles{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stats div:nth-child(3){border-left:0}.stats div:nth-child(n+3){border-top:1px solid var(--line)}.site-foot .wrap{grid-template-columns:1fr}.site-head{position:static}.plot text{font-size:22px}}
+@media (max-width:34rem){body{font-size:16px}.sec{padding:2.75rem 0}.hero .wrap{padding-top:3rem}.brand span{display:none}dl.facts{grid-template-columns:1fr;gap:.1rem}dl.facts dd{margin-bottom:.7rem}}
