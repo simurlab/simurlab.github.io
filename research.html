@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research – SiMuR</title>
+<meta name="description" content="The SiMuR research programme: wearable measurement of joint kinematics and gait in everyday conditions, by non-expert users, with known and verifiable uncertainty.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site"><div class="wrap">
+<a class="brand" href="index.html">SiMuR<span>Multisensor Systems and Robotics · University of Oviedo</span></a>
+<nav aria-label="Main"><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="research.html" aria-current="page">Research</a></li>
+<li><a href="applications.html">Applications</a></li>
+<li><a href="facilities.html">Facilities</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="team.html">Team</a></li>
+</ul></nav>
+</div></header>
+
+<main id="main">
+<section class="page-head"><div class="wrap">
+<p class="eyebrow">Research programme</p>
+<h1>Measuring human movement outside the camera-monitored space</h1>
+<p class="lead">Optical motion capture, with or without markers, needs cameras with a clear line of sight over a fixed volume. Inertial sensors can leave that volume, but today they do so with restrictions: expert placement, supervised calibration, short sessions and methods validated for one task and one population. Our programme studies how to remove those restrictions without losing the right to call the result a measurement.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>The problems we address</h2>
+<p>Measuring a joint angle with body-worn sensors requires placing a network of sensors on a moving body, knowing at all times how each sensor is oriented relative to the joint, and delivering a value with its metrological properties. Each requirement is a research problem.</p>
+<div class="grid">
+<div class="card" id="sensor"><span class="num">Problem 1</span><h3>Sensor, placement and conditions of use</h3><p>Which errors of the sensor node are admissible, how far a sensor may be from its nominal position, and which conditions of use the system must recognise: magnetic disturbance, bias variation, sensor displacement, high acceleration.</p></div>
+<div class="card" id="calibration"><span class="num">Problem 2</span><h3>Calibration from the person's own movement</h3><p>Estimating the orientation of each sensor relative to its body segment, and of the sensors relative to each other, without manoeuvres directed by an expert, and keeping that estimate valid as conditions change during a session.</p></div>
+<div class="card" id="uncertainty"><span class="num">Problem 3</span><h3>The value and its uncertainty</h3><p>Estimating the joint angle or gait variable together with an interval that depends on the conditions in which it was obtained, from the characterisation of the sensor to the movement of soft tissue.</p></div>
+</div>
+</div></section>
+
+<section id="verification"><div class="wrap">
+<h2>Verification without a perfect reference</h2>
+<p>In people there is no exact reference: optical motion capture with skin markers is affected by soft tissue too. We therefore verify in levels, each with its own declared uncertainty and each isolating part of the error.</p>
+<div class="grid">
+<div class="card"><h3>Robotic test bench</h3><p>An industrial manipulator moves the sensors along known trajectories. It isolates the errors of the sensor and of the algorithm, with no soft tissue involved.</p></div>
+<div class="card"><h3>Optical motion capture</h3><p>Our laboratory, MovLab, provides the reference in people. Its own uncertainty has been evaluated against the robot.</p></div>
+<div class="card"><h3>Field checks</h3><p>Outside the laboratory, partial references show whether the declared uncertainty is consistent with what is observed. They do not replace a laboratory reference.</p></div>
+</div>
+<p style="margin-top:1.25rem">Details of the equipment are in <a href="facilities.html">Facilities</a>.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Methods</h2>
+<p>We combine sensor characterisation, signal processing, biomechanical models of the joints and of gait, and experimental validation. Machine learning is one of our tools: we use it to estimate kinematic variables from raw inertial data and to recognise activities from wearable accelerometry, and we study how such models behave across people, conditions and devices.</p>
+<p>Lines with published results include segment orientation without a magnetometer, joint angle estimation, gait events and ground contact time, walking speed and distance, pedestrian navigation and activity recognition. The full list is in <a href="publications.html">Publications</a>.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>What we do not claim</h2>
+<div class="note"><p>A wearable measurement is not valid in every condition. Part of the result is to state the domain in which it holds, and to make the system recognise from its own signals when it is outside that domain. Everyday conditions here describe how the data are acquired; they do not mean continuous round-the-clock monitoring at home.</p></div>
+</div></section>
+</main>
+
+<footer class="site"><div class="wrap">
+<div><p><strong>SiMuR – Multisensor Systems and Robotics</strong></p><p>Department of Electrical, Electronic, Computer and Systems Engineering (DIEECS)</p><p>University of Oviedo</p></div>
+<div><p><strong>Contact</strong></p><p><a href="mailto:juan@uniovi.es">juan@uniovi.es</a></p><p>(+34) 985 182529</p></div>
+<div><p><strong>Address</strong></p><p>Ed. Departamental Oeste nº 2, Lab 2.1.15</p><p>Campus Universitario, 33204 Gijón, Asturias, Spain</p></div>
+</div></footer>
+</body>
+</html>
