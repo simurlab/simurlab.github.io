@@ -5,17 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Publications – SiMuR</title>
 <meta name="description" content="Publications of the SiMuR group on wearable inertial sensors, joint kinematics, gait analysis, metrology of motion capture and activity recognition.">
+<link rel="icon" href="assets/img/old/home-01.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
-<header class="site"><div class="wrap">
-<a class="brand" href="index.html">SiMuR<span>Multisensor Systems and Robotics · University of Oviedo</span></a>
-<nav aria-label="Main"><ul>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="index.html"><img src="assets/img/old/home-04.png" alt="SiMuR Movement Technology" width="800" height="387"><span>Multisensor Systems and Robotics, University of Oviedo</span></a>
+<nav class="site-nav" aria-label="Main"><ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="research.html">Research</a></li>
 <li><a href="applications.html">Applications</a></li>
-<li><a href="facilities.html">Facilities</a></li>
+<li><a href="facilities.html">MovLab</a></li>
 <li><a href="publications.html" aria-current="page">Publications</a></li>
 <li><a href="team.html">Team</a></li>
 </ul></nav>
@@ -23,15 +26,14 @@
 
 <main id="main">
 <section class="page-head"><div class="wrap">
-<p class="eyebrow">Publications</p>
-<h1>Publications by topic</h1>
-<p class="lead">Selected journal articles and conference papers on wearable sensing of human movement, most recent first within each topic.</p>
-<p><a href="#nodes">Sensor nodes and metrology</a> · <a href="#joints">Joint kinematics</a> · <a href="#gait">Gait and ambulatory navigation</a> · <a href="#activity">Activity recognition and sport</a></p>
+<h1>Publications</h1>
+<p class="lead">Journal articles and conference papers, grouped by topic and with the most recent first.</p>
+<ul class="pubnav"><li><a href="#nodes">Sensor nodes and metrology</a></li><li><a href="#joints">Joint kinematics</a></li><li><a href="#gait">Gait and ambulatory navigation</a></li><li><a href="#activity">Activity recognition and sport</a></li><li><a href="#robotics">Robotics and biosignals</a></li></ul>
 </div></section>
 
-<section id="nodes"><div class="wrap">
+<section class="sec white" id="nodes"><div class="wrap">
 <h2>Sensor nodes and metrology</h2>
-<ul class="plain pubs">
+<ul class="pubs">
 <li><span class="t">Evaluation of magnetometer-less inertial sensors for static and dynamic spatial orientation estimation</span><span class="a">A. Castellanos Alonso, G. García Carro, J.C. Álvarez, D. Álvarez, A.M. López, D. Valdés Tirado</span><span class="v">IEEE Transactions on Instrumentation and Measurement 75, 1001810 (2026). <a href="https://doi.org/10.1109/TIM.2026.3670515">doi:10.1109/TIM.2026.3670515</a></span></li>
 <li><span class="t">Enhanced design and characterization of a wearable IMU for high-frequency motion capture</span><span class="a">D. Valdés-Tirado, G. García Carro, J.C. Álvarez, D. Álvarez, A.M. López</span><span class="v">Sensors 25, 6224 (2025). <a href="https://doi.org/10.3390/s25196224">doi:10.3390/s25196224</a></span></li>
 <li><span class="t">Design of an IMU based wearable measurement system for rapid events</span><span class="a">D. Valdés Tirado, G. García Carro, J.C. Álvarez, A. Castellanos Alonso, D. Álvarez, A.M. López</span><span class="v">IEEE I2MTC 2025, Chemnitz. <a href="https://doi.org/10.1109/I2MTC62753.2025.11079060">doi:10.1109/I2MTC62753.2025.11079060</a></span></li>
@@ -42,14 +44,13 @@
 </ul>
 </div></section>
 
-<section id="joints"><div class="wrap">
+<section class="sec" id="joints"><div class="wrap">
 <h2>Joint kinematics</h2>
-<ul class="plain pubs">
+<ul class="pubs">
 <li><span class="t">Calibration-free single-DOF joint kinematics estimation from raw IMU data using LSTMs: robustness under pitch-plane global motion</span><span class="a">G. García Carro, J.C. Álvarez, A. Castellanos Alonso, D. Álvarez, A.M. López</span><span class="v">IEEE I2MTC 2026, Nancy.</span></li>
 <li><span class="t">A physics-informed self-supervised approach to planar joint angle inference</span><span class="a">A. Castellanos Alonso, G. García Carro, J.C. Álvarez, A.M. López, D. Álvarez</span><span class="v">IEEE I2MTC 2026, Nancy.</span></li>
 <li><span class="t">Nuevo método para la estimación de rotaciones articulares mediante sensores inerciales</span><span class="a">A. Castellanos Alonso, G. García Carro, J.C. Álvarez, A.M. López, D. Álvarez</span><span class="v">XXXIII Seminario Anual de Automática, Electrónica Industrial e Instrumentación (SAEI), Gijón, 2026.</span></li>
 <li><span class="t">Inertial sensor-based motion calibration for 1-DoF joint angle estimation</span><span class="a">G. García Carro, J.C. Álvarez, D. Valdés Tirado, A. Castellanos Alonso, A.M. López, D. Álvarez</span><span class="v">IEEE EMBC 2025, Copenhagen. <a href="https://doi.org/10.1109/EMBC58623.2025.11254693">doi:10.1109/EMBC58623.2025.11254693</a></span></li>
-<li><span class="t">Assessment of the mechanical support characteristics of a light and wearable robotic exoskeleton prototype applied to upper limb rehabilitation</span><span class="a">M.A. Vélez-Guerrero, M. Callejas-Cuervo, J.C. Álvarez, S. Mazzoleni</span><span class="v">Sensors 22, 3999 (2022). <a href="https://doi.org/10.3390/s22113999">doi:10.3390/s22113999</a></span></li>
 <li><span class="t">Device and method for the biomechanical analysis of articular amplitude using micro-sensors for the measurement of movement</span><span class="a">M. Callejas-Cuervo, J.C. Álvarez</span><span class="v">Advanced Materials Letters 10(1), 41–44 (2019). <a href="https://doi.org/10.5185/amlett.2019.1909">doi:10.5185/amlett.2019.1909</a></span></li>
 <li><span class="t">Upper limb joint angle measurement in occupational health</span><span class="a">D. Álvarez, J.C. Álvarez, R.C. González, A.M. López</span><span class="v">Computer Methods in Biomechanics and Biomedical Engineering 19, 159–170 (2016). <a href="https://doi.org/10.1080/10255842.2014.997718">doi:10.1080/10255842.2014.997718</a></span></li>
 <li><span class="t">Capture and analysis of biomechanical signals with inertial and magnetic sensors as support in physical rehabilitation processes</span><span class="a">M. Callejas-Cuervo, J.C. Álvarez, D. Álvarez</span><span class="v">IEEE BSN 2016, pp. 119–123. <a href="https://doi.org/10.1109/BSN.2016.7516244">doi:10.1109/BSN.2016.7516244</a></span></li>
@@ -57,12 +58,12 @@
 </ul>
 </div></section>
 
-<section id="gait"><div class="wrap">
+<section class="sec white" id="gait"><div class="wrap">
 <h2>Gait and ambulatory navigation</h2>
-<ul class="plain pubs">
+<ul class="pubs">
 <li><span class="t">Estimation of ground contact time with inertial sensors from the upper arm and the upper back</span><span class="a">L. González, A.M. López, D. Álvarez, J.C. Álvarez</span><span class="v">Sensors 23, 2523 (2023). <a href="https://doi.org/10.3390/s23052523">doi:10.3390/s23052523</a></span></li>
 <li><span class="t">Real-time short-term pedestrian trajectory prediction based on gait biomechanics</span><span class="a">L. González, A.M. López, J.C. Álvarez, D. Álvarez</span><span class="v">Sensors 22, 5828 (2022). <a href="https://doi.org/10.3390/s22155828">doi:10.3390/s22155828</a></span></li>
-<li><span class="t">Evaluation of filtering methods for the prediction of human position during walking by means of kinematical models</span><span class="a">L. González, A.M. López, D. Álvarez, J.C. Álvarez</span><span class="v">IEEE I2MTC 2021. <a href="https://doi.org/10.1109/I2MTC50364.2021.9460044">doi:10.1109/I2MTC50364.2021.9460044</a></span></li>
+<li><span class="t">Evaluation of filtering methods for the prediction of human position during walking by means of kinematical models</span><span class="a">L. González, A.M. López, D. Álvarez, J.C. Álvarez</span><span class="v">IEEE I2MTC 2021, Glasgow. <a href="https://doi.org/10.1109/I2MTC50364.2021.9460044">doi:10.1109/I2MTC50364.2021.9460044</a></span></li>
 <li><span class="t">Walking turn prediction from upper body kinematics: a systematic review with implications for human–robot interaction</span><span class="a">A.M. López, J.C. Álvarez, D. Álvarez</span><span class="v">Applied Sciences 9(3), 361 (2019). <a href="https://doi.org/10.3390/app9030361">doi:10.3390/app9030361</a></span></li>
 <li><span class="t">Accelerometry-based distance estimation for ambulatory human motion analysis</span><span class="a">J.C. Álvarez, D. Álvarez, A.M. López</span><span class="v">Sensors 18(12), 4441 (2018). <a href="https://doi.org/10.3390/s18124441">doi:10.3390/s18124441</a></span></li>
 <li><span class="t">Slope estimation during normal walking using a shank-mounted inertial sensor</span><span class="a">A.M. López, D. Álvarez, R.C. González, J.C. Álvarez</span><span class="v">Sensors 12(9), 11910–11921 (2012). <a href="https://doi.org/10.3390/s120911910">doi:10.3390/s120911910</a></span></li>
@@ -74,19 +75,30 @@
 </ul>
 </div></section>
 
-<section id="activity"><div class="wrap">
+<section class="sec" id="activity"><div class="wrap">
 <h2>Activity recognition and sport</h2>
-<ul class="plain pubs">
+<ul class="pubs">
 <li><span class="t">Impact of gyroscope integration, sensor placement, and activity granularity on human activity recognition performance</span><span class="a">A. Castellanos, A.M. López, M.Á. Salinas, J.C. Álvarez, D. Álvarez, G. García, Á. Buendía-Romero, A. Mañas, R. Bailón, V. Martín, A. Carbonell-Baeza, V. Cabanas-Sánchez, D. Martinez-Gomez</span><span class="v">Sensors 26(12), 3683 (2026). <a href="https://www.mdpi.com/1424-8220/26/12/3683">mdpi.com/1424-8220/26/12/3683</a></span></li>
-<li><span class="t">Human activity recognition from thigh and wrist accelerometry</span><span class="a">A. Castellanos Alonso, A.M. López, D. Garcia-Perez, D. Álvarez, J.C. Álvarez</span><span class="v">ESANN 2024.</span></li>
+<li><span class="t">Human activity recognition from thigh and wrist accelerometry</span><span class="a">A. Castellanos Alonso, A.M. López, D. Garcia-Perez, D. Álvarez, J.C. Álvarez</span><span class="v">ESANN 2024, Bruges.</span></li>
 <li><span class="t">Validity of smartphones for assessing kayak paddler training</span><span class="a">D. Álvarez, A.M. López, J.C. Álvarez, L. González</span><span class="v">Proc. IMechE Part P: Journal of Sports Engineering and Technology (2023). <a href="https://doi.org/10.1177/17543371231221013">doi:10.1177/17543371231221013</a></span></li>
+</ul>
+</div></section>
+
+<section class="sec white" id="robotics"><div class="wrap">
+<h2>Robotics and biosignals</h2>
+<ul class="pubs">
+<li><span class="t">Generación de electrooculogramas sintéticos mediante redes LSTM</span><span class="a">A. López Martínez, F.J. Ferrero Martín, J.C. Álvarez</span><span class="v">XXXIII Seminario Anual de Automática, Electrónica Industrial e Instrumentación (SAEI), Gijón, 2026.</span></li>
+<li><span class="t">EOG compression in polysomnographic recordings based on the Lempel-Ziv-Welch algorithm</span><span class="a">A. López, G. García, S.M. Qaisar, F. Ferrero, J.C. Álvarez</span><span class="v">Biomedical Signal Processing and Control 103 (2025).</span></li>
+<li><span class="t">Assessment of the mechanical support characteristics of a light and wearable robotic exoskeleton prototype applied to upper limb rehabilitation</span><span class="a">M.A. Vélez-Guerrero, M. Callejas-Cuervo, J.C. Álvarez, S. Mazzoleni</span><span class="v">Sensors 22, 3999 (2022). <a href="https://doi.org/10.3390/s22113999">doi:10.3390/s22113999</a></span></li>
+<li><span class="t">Protocol proposal for the mechanical evaluation of a soft robotic exoskeleton using an optical motion capture system</span><span class="a">M. Vélez-Guerrero, M. Callejas-Cuervo, J.C. Álvarez, S. Mazzoleni, A.M. López, D. Álvarez, L. González</span><span class="v">GMEPE/PAHCE 2022, Panama City.</span></li>
+<li><span class="t">Model-based design of a collaborative human–robot workspace</span><span class="a">R. Rahmayanti, J.C. Álvarez, D. Álvarez, A.M. López</span><span class="v">31st IEEE Int. Conf. on Robot and Human Interactive Communication (RO-MAN), Naples, 2022.</span></li>
 </ul>
 </div></section>
 </main>
 
-<footer class="site"><div class="wrap">
-<div><p><strong>SiMuR – Multisensor Systems and Robotics</strong></p><p>Department of Electrical, Electronic, Computer and Systems Engineering (DIEECS)</p><p>University of Oviedo</p></div>
-<div><p><strong>Contact</strong></p><p><a href="mailto:juan@uniovi.es">juan@uniovi.es</a></p><p>(+34) 985 182529</p></div>
+<footer class="site-foot"><div class="wrap">
+<div><p><strong>SiMuR, Multisensor Systems and Robotics</strong></p><p>Department of Electrical, Electronic, Computer and Systems Engineering</p><p>University of Oviedo</p></div>
+<div><p><strong>Contact</strong></p><p><a href="mailto:juan@uniovi.es">juan@uniovi.es</a></p><p>(+34) 985 182529</p><p><a href="https://github.com/simurlab">github.com/simurlab</a></p></div>
 <div><p><strong>Address</strong></p><p>Ed. Departamental Oeste nº 2, Lab 2.1.15</p><p>Campus Universitario, 33204 Gijón, Asturias, Spain</p></div>
 </div></footer>
 </body>
