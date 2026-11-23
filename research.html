@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Research – SiMuR</title>
-<meta name="description" content="Research topics of the SiMuR group: trustworthy estimation, wearable inertial measurement units, joint kinematics and gait, activity recognition, learning-based motion reconstruction and ambulatory navigation.">
+<meta name="description" content="Research programme of the SiMuR group: wearable sensor nodes and their metrology, joint kinematics, gait variables, and the uncertainty and operating domain of wearable measurements.">
 <link rel="icon" href="assets/img/old/home-01.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -26,8 +26,8 @@
 
 <main id="main">
 <section class="page-head"><div class="wrap">
-<h1>Research topics</h1>
-<p class="lead">Methods and measurement capabilities at the core of the group: how we turn wearable and optical sensing into reliable human-motion variables. These lines sustain our scientific output and the technology transfer, a toolbox and validation services, that grows out of them.</p>
+<h1>Research programme</h1>
+<p class="lead">One question runs through our work: what it takes for a value obtained with wearable sensors, outside the laboratory, to count as a measurement. Four topics follow it from the sensor node to the joint angle and its uncertainty.</p>
 </div></section>
 
 <section class="sec white"><div class="wrap split">
@@ -39,49 +39,64 @@
 </div></section>
 
 <section class="sec"><div class="wrap">
-<h2>Core capabilities</h2>
-<div class="tiles">
+<h2>Four topics, one programme</h2>
+<p>For each topic we separate what is already published from what is work in progress.</p>
+<div class="tiles" style="margin-top:2rem">
 
-<article class="tile" id="trustworthy"><img src="assets/img/old/research-topis-04.jpg" alt="" width="1280" height="375"><div class="body">
-<h3>Trustworthy estimation</h3>
-<p>Making wearable motion estimates trustworthy: validation against an optical reference, calibrated per-joint uncertainty and robustness in everyday use. Each kinematic estimate becomes a signal that is verified, carries its own confidence and detects its own failures.</p>
-<ul><li>Metrological validation of wearable estimates against optical motion capture as reference.</li><li>Calibrated, per-joint uncertainty quantification (conformal and Bayesian methods).</li><li>Detection of sensor displacement and misplacement, and drift handling, for long-term use.</li><li>Out-of-distribution detection and reliability flags that make estimates auditable for clinical and sports decisions.</li><li>Reproducible validation protocols; validation datasets released openly as a by-product of specific studies.</li></ul>
+<article class="tile" id="imu"><img src="assets/img/old/research-topis-05.jpg" alt="A wearable inertial node held between gloved fingers" width="1280" height="375" style="aspect-ratio:640/375;height:auto;object-fit:cover;object-position:100% 50%"><div class="body">
+<h3>1. Sensor nodes and their metrology</h3>
+<p>Which sensor errors are admissible for a given movement variable? We design our own wearable inertial measurement units and characterise them: noise, bias stability, scale factor and axis misalignment.</p>
+<dl class="facts">
+<dt>Published</dt><dd>Design and characterisation of a wearable inertial node (<a href="https://doi.org/10.3390/s24165388">Sensors 2024</a>); extended-bandwidth node for rapid events such as impacts (<a href="https://doi.org/10.3390/s25196224">Sensors 2025</a>); magnetometer-less orientation evaluated under static and dynamic conditions on a robotic test bench (<a href="https://doi.org/10.1109/TIM.2026.3670515">IEEE TIM 2026</a>).</dd>
+<dt>In progress</dt><dd>Time synchronisation and acquisition in multi-node networks.</dd>
+</dl>
+<p class="small"><a href="publications.html#nodes">Publications on this topic</a></p>
 </div></article>
 
-<article class="tile" id="imu"><img src="assets/img/old/research-topis-05.jpg" alt="" width="1280" height="375"><div class="body">
-<h3>Wearable inertial measurement units</h3>
-<p>Design, characterisation and real-time operation of wearable inertial measurement units and sensor networks for human-motion analysis.</p>
-<ul><li>Design and characterisation of wearable IMUs and body sensor networks.</li><li>High-frequency inertial capture of high-dynamic events (impacts, sport gestures).</li><li>Magnetometer-less orientation estimation and its limits.</li><li>Sensor calibration and metrological characterisation procedures.</li><li>Time synchronisation and multi-sensor data acquisition.</li></ul>
+<article class="tile" id="joints"><img src="assets/img/old/research-topis-06.jpg" alt="A wearable sensor strapped below the knee of a runner" width="1280" height="375" style="aspect-ratio:640/375;height:auto;object-fit:cover;object-position:94% 50%"><div class="body">
+<h3>2. Joint kinematics</h3>
+<p>How can the orientation of each sensor relative to the joint be obtained from the person's own movement, without a specialist? We work on sensor-to-segment calibration and joint angle estimation, with model-based and learning-based methods.</p>
+<dl class="facts">
+<dt>Published</dt><dd>Motion calibration for one-degree-of-freedom joint angles (<a href="https://doi.org/10.1109/EMBC58623.2025.11254693">IEEE EMBC 2025</a>); calibration-free estimation with recurrent networks and a physics-informed self-supervised approach (IEEE I2MTC 2026); upper-limb joint angles in occupational health (<a href="https://doi.org/10.1080/10255842.2014.997718">CMBBE 2016</a>).</dd>
+<dt>In progress</dt><dd>Joints with several degrees of freedom; multi-segment kinematics of the spine and trunk; estimation from a reduced set of sensors with biomechanical priors.</dd>
+</dl>
+<p class="small"><a href="publications.html#joints">Publications on this topic</a></p>
 </div></article>
 
-<article class="tile" id="joints"><img src="assets/img/old/research-topis-06.jpg" alt="" width="1280" height="375"><div class="body">
-<h3>Joint kinematics and gait variables</h3>
-<p>Estimation of segment and joint kinematics and of discrete gait descriptors from multiple wearable inertial sensors.</p>
-<ul><li>Joint angle estimation from single- and multi-sensor configurations.</li><li>Sensor-to-segment calibration and alignment.</li><li>Gait event detection and ground contact time.</li><li>Spatio-temporal gait parameter estimation.</li><li>Spine and trunk multi-segment kinematics.</li></ul>
+<article class="tile" id="gait"><img src="assets/img/old/research-topis-09.jpg" alt="A person walking along a corridor, seen from behind" width="1280" height="375" style="aspect-ratio:640/375;height:auto;object-fit:cover;object-position:100% 50%"><div class="body">
+<h3>3. Gait and spatio-temporal variables</h3>
+<p>Which gait descriptors can be obtained from one or two sensors on the trunk or the limbs? This is the group's longest-running topic: gait events, contact times, step length, speed, distance and slope.</p>
+<dl class="facts">
+<dt>Published</dt><dd>Gait event detection from lower-trunk accelerations (<a href="https://doi.org/10.1016/j.gaitpost.2009.11.014">Gait &amp; Posture 2010</a>); distance estimation by accelerometry (<a href="https://doi.org/10.3390/s18124441">Sensors 2018</a>); waist-worn pedestrian navigation (<a href="https://doi.org/10.3390/s120810536">Sensors 2012</a>); ground contact time from the upper arm and upper back (<a href="https://doi.org/10.3390/s23052523">Sensors 2023</a>).</dd>
+</dl>
+<p class="small"><a href="publications.html#gait">Publications on this topic</a></p>
 </div></article>
 
-<article class="tile" id="har"><img src="assets/img/old/research-topis-07.jpg" alt="" width="1280" height="375"><div class="body">
-<h3>Human activity recognition</h3>
-<p>Recognising and characterising human activity from wearable inertial signals with machine learning, including deep and self-supervised models.</p>
-<ul><li>Activity classification and temporal segmentation from wearable IMU signals.</li><li>Activity recognition from thigh, wrist and upper-body accelerometry.</li><li>Self-supervised and transfer learning to reduce labelling needs.</li><li>Context inference in IMU sensing.</li><li>Robustness to sensor placement, subject and protocol variability.</li></ul>
-</div></article>
-
-<article class="tile" id="reconstruction"><img src="assets/img/old/research-topis-08.jpg" alt="" width="1280" height="375"><div class="body">
-<h3>Learning-based motion reconstruction</h3>
-<p>Reconstruction of full-body joint kinematics from few, everyday sensors by combining sensor fusion with physics-informed learning.</p>
-<ul><li>Sparse-to-dense kinematics: full-body motion from a reduced set of wearable sensors.</li><li>Physics-informed, differentiable-biomechanics priors that enforce anatomically plausible motion.</li><li>Estimation without supervised calibration and tolerant to sensor placement, for everyday use.</li><li>Magnetometer-free operation through kinematic constraints (joint axes and centres).</li><li>Joint-angle accuracy assessed against an optical reference.</li></ul>
-</div></article>
-
-<article class="tile" id="navigation"><img src="assets/img/old/research-topis-09.jpg" alt="" width="1280" height="375"><div class="body">
-<h3>Ambulatory human navigation</h3>
-<p>Estimating human locomotion in GPS-denied environments from body-worn inertial sensors, without external positioning infrastructure: pedestrian dead reckoning, direction-change intention and trajectory reconstruction.</p>
-<ul><li>Pedestrian dead reckoning and waist-worn inertial navigation.</li><li>Accelerometry-based distance, speed and slope estimation.</li><li>Step segmentation and stride-length modelling.</li><li>Real-time short-term pedestrian trajectory prediction.</li><li>Intention and turn anticipation from body kinematics.</li></ul>
+<article class="tile" id="trustworthy"><img src="assets/img/old/research-topis-04.jpg" alt="The MovLab laboratory with its optical cameras on tripods" width="1280" height="375" style="aspect-ratio:640/375;height:auto;object-fit:cover;object-position:88% 50%"><div class="body">
+<h3>4. Uncertainty and operating domain</h3>
+<p>How can each estimate carry an interval that is checked against a reference, and how can the system detect that it has left the conditions in which that interval holds? This topic is where the other three converge, and it is the most recent.</p>
+<dl class="facts">
+<dt>Published</dt><dd>Metrological evaluation of our own optical reference with an industrial robot (<a href="https://doi.org/10.3390/s21113748">Sensors 2021</a>); errors of orientation estimation isolated on the robotic test bench (<a href="https://doi.org/10.1109/TIM.2026.3670515">IEEE TIM 2026</a>).</dd>
+<dt>In progress</dt><dd>Coverage intervals per joint (conformal and Bayesian methods); detection of sensor displacement, magnetic disturbance and other situations outside the validated domain; field checks of the declared uncertainty.</dd>
+</dl>
 </div></article>
 
 </div>
 </div></section>
 
-<section class="sec white"><div class="wrap split">
+<section class="sec white" id="har"><div class="wrap area">
+<img src="assets/img/old/research-topis-07.jpg" alt="A researcher reviewing inertial signals on two screens" width="1280" height="375" style="aspect-ratio:640/375;height:auto;object-fit:cover;object-position:90% 50%">
+<div>
+<h2>Supporting line: activity recognition</h2>
+<p>Outside the laboratory nobody prescribes the movement, so the system has to recognise what the person is doing before a measurement can be interpreted. We recognise activity from thigh, wrist and trunk accelerometry and study how the result depends on sensor placement, the use of the gyroscope and the level of detail of the activity labels.</p>
+<dl class="facts">
+<dt>Published</dt><dd>Effect of gyroscope, sensor placement and activity granularity on recognition performance (<a href="https://www.mdpi.com/1424-8220/26/12/3683">Sensors 2026</a>); recognition from thigh and wrist accelerometry (ESANN 2024).</dd>
+</dl>
+<p class="small"><a href="publications.html#activity">Publications on this line</a></p>
+</div>
+</div></section>
+
+<section class="sec"><div class="wrap split">
 <div><h2>Verification without a perfect reference</h2></div>
 <div>
 <p>In people there is no exact reference: optical motion capture with skin markers is affected by soft tissue too. We verify in levels, each with its own declared uncertainty. A robotic test bench isolates the errors of the sensor and the algorithm; the optical laboratory provides the reference in people; and field checks show whether the declared uncertainty is consistent with what is observed outside the laboratory.</p>
