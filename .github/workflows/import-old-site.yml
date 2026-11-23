@@ -1,0 +1,45 @@
+name: Import images from the old site
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/import-old-site.yml
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download images
+        run: |
+          mkdir -p assets/img/old
+          : > assets/img/old/index.txt
+          for page in home team movlab research-topis; do
+            slug=$page
+            curl -sL -A "Mozilla/5.0" "https://simur.dieecs.com/$page" -o page.html
+            grep -o 'https://lh[0-9a-z-]*\.googleusercontent\.com/sitesv-images-rt/[A-Za-z0-9_-]*' page.html | awk '!seen[$0]++' > urls.txt
+            n=0
+            while read -r url; do
+              n=$((n+1))
+              num=$(printf '%02d' "$n")
+              curl -sL "$url=w1280" -o tmp.img
+              case "$(file -b --mime-type tmp.img)" in
+                image/png) ext=png ;;
+                image/gif) ext=gif ;;
+                image/webp) ext=webp ;;
+                *) ext=jpg ;;
+              esac
+              mv tmp.img "assets/img/old/$slug-$num.$ext"
+              echo "$slug-$num.$ext $(file -b assets/img/old/$slug-$num.$ext | cut -c1-140)" >> assets/img/old/index.txt
+            done < urls.txt
+          done
+          rm -f page.html urls.txt
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/img/old
+          git diff --cached --quiet || git commit -m "Import images from the old Google Sites website"
+          git pull --rebase
+          git push
