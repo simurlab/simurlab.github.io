@@ -135,7 +135,7 @@ dl.facts dd{margin:0}
 
 /* footer */
 .site-foot{background:var(--ink);color:#b9cfcc;font-size:.92rem;padding:2.75rem 0}
-.site-foot .wrap{display:grid;gap:1.5rem 3rem;grid-template-columns:1.4fr 1fr 1fr}
+.site-foot .wrap{display:grid;gap:1.5rem 2.5rem;grid-template-columns:1.4fr 1fr 1.25fr .75fr}
 .site-foot strong{color:#fff;font-family:var(--display);font-stretch:108%}
 .site-foot p{margin:0 0 .3rem}
 .site-foot a{color:#fff}
